@@ -1,0 +1,8 @@
+version: '3'
+services:
+
+  rsync_cron:
+    build: .
+    volumes:
+     - /home/bear/bear-code/data1:/src
+     - /home/bear/bear-code/data2:/dst
