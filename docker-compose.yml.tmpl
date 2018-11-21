@@ -1,0 +1,11 @@
+version: '3'
+services:
+
+  rsync_cron:
+    build: .
+    volumes:
+     - /path/to/src:/src
+     - /path/to/dst:/dst
+    restart: always
+    environment:
+     - ENV CRON_STRINGS="*/5 * * * * /usr/bin/rsync -r -a --no-links --delete /src/ /dst"
