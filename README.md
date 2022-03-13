@@ -1,8 +1,8 @@
-# docker-rsync-cron
+# docker-compose-rsync-cron
 
 Sync files between two folders in local filesystem by rsync and cron.
 
-# Commands
+## Commands
 
 ```sh
 #Run container
